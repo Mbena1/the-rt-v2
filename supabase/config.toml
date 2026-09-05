@@ -1,0 +1,10 @@
+project_id = "rizcodzzaraogweidnqw"
+
+[functions.oauth-callback]
+verify_jwt = false
+
+[functions.monitor-accounts]
+verify_jwt = false
+
+[functions.queue-processor]
+verify_jwt = false
