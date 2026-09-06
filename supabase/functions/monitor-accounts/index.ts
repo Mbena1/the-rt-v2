@@ -98,7 +98,7 @@ Deno.serve(async (req: Request) => {
         // 3. Fetch recent tweets from X API
         const tweetsUrl = new URL(`https://api.twitter.com/2/users/${account.x_user_id}/tweets`);
         tweetsUrl.searchParams.set("max_results", "10");
-        tweetsUrl.searchParams.set("tweet.fields", "created_at,author_id,referenced_tweeted");
+        tweetsUrl.searchParams.set("tweet.fields", "created_at,author_id,referenced_tweets");
         tweetsUrl.searchParams.set("exclude", "retweets,replies");
 
         console.log(`[X API] Fetching tweets for @${account.username} (x_user_id: ${account.x_user_id})`);
